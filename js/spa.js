@@ -12,7 +12,7 @@ var spa = (function(){
     var initModule = function($container){
         $container.html(
         '<h1 style="dsplay:inline-block; margin: 25px;">'
-        + 'hello, World!'
+        + 'Hello, World!'
             + '</h1>'
         );
     };
