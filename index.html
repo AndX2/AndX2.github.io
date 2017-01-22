@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SPA Chapter 1 section 1.2.5</title>
+    <style type="text/css">
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #777;
+        }
+        
+        #spa {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            bottom: 8px;
+            right: 8px;
+            border-radius: 8px 8px 0px 8px;
+            background-color: #fff;
+        }
+        
+        .spa-slider {
+            position: absolute;
+            bottom: 0px;
+            right: 2px;
+            width: 300px;
+            height: 16px;
+            cursor: pointer;
+            border-radius: 8px 0px 0px 0px;
+            background-color: #f00;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+    /*jslint browser:true, continue:true,
+    devel:true, indent:2, maxerr:50,
+    newcap:true, nomen:true, plusplus:true,
+    regexp:true, sloppy:true, vars:true,
+    white:true
+    */
+    /*global jQuery*/
+
+    // Module /spa/
+    // contains functional popUp chat
+    var spa = (function($){
+        // Vars of module scope
+        var
+        // Consts
+        configMap = {
+            extended_height : 434,
+            extended_title : 'Click to retract',
+            retracted_height : 16,
+            retracted_title : 'Click to extend',
+            template_html: '<div class="spa-slider"></div>'
+
+        },
+         // Another vars
+        $chatSlider,
+        toggleSlider, onClickSlider, initModule;
+
+        // DOM metod /toggle slider/
+        // changing height chat window
+
+        toggleSlider = function(){
+            var
+            slider_height = $chatSlider.height();
+
+            //expand chat window if it close
+            if (slider_height === configMap.retracted_height){
+                console.log('toggleSlider if height = retract');
+                $chatSlider
+                .animate({height:configMap.extended_height})
+                .attr('title', configMap.extended_title);
+                return true;
+            }
+
+            //tetract chat window if it open
+            else if (slider_height === configMap.extended_height){
+                console.log('toggleSlider if height = extend');
+                $chatSlider
+                .animate({height:configMap.retracted_height})
+                .attr('title', configMap.retracted_title);
+                return true;
+            }
+
+            //do nothing if window changed state proceed
+            return false;
+
+
+        };
+
+        // onClickClider handler
+        // take click event and call toggleSlider
+
+        onClickSlider = function(event){
+//            console.log('onClickSlider');
+            toggleSlider();
+            return false;
+
+        };
+
+        // open metod /initModule/
+        // set init state and provide functions
+
+        initModule = function ($container){
+            
+            // render html
+            $container.html(configMap.template_html);
+
+            $chatSlider = $container.find('.spa-slider');
+            // init height and description chat window
+            // set onClickListener
+            $chatSlider
+                .attr('title', configMap.retracted_title)
+                .click(onClickSlider);
+
+            return true;
+            
+        };
+
+        return {initModule : initModule};
+        
+    }(jQuery));
+
+        // start SPA, when DOM model ready
+
+        jQuery(document).ready(
+            function(){spa.initModule(jQuery('#spa'));}
+        );
+    </script>
+</head>
+
+<body>
+    <div id="spa"></div>
+</body>
+
+</html>
