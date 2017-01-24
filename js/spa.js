@@ -8,13 +8,9 @@
     */
 /*global $, spa */
 
-var spa = (function(){
-    var initModule = function($container){
-        $container.html(
-        '<h1 style="dsplay:inline-block; margin: 25px;">'
-        + 'Hello, World!'
-            + '</h1>'
-        );
+var spa = (function () {
+    var initModule = function ($container) {
+        spa.shell.initModule($container);
     };
     return {
         initModule: initModule
