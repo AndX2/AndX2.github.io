@@ -91,8 +91,14 @@ styles for Shell
     right: 0;
     width: 300px;
     height: 15px;
+    cursor: pointer;
     background: red;
+    border-radius: 5px 0 0 0;
     z-index: 1;
+}
+
+.spa-shell-chat:hover{
+    background: #a00;
 }
 
 .spa-shell-modal {
@@ -105,4 +111,8 @@ styles for Shell
     background: #fff;
     border-radius: 3px;
     z-index: 2;
+}
+
+.spa-shell-modal:hover{
+    background: #ccc;
 }
