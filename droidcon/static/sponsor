@@ -1,7 +1,7 @@
 {
   "category": [
     {
-      "name": "gold",
+      "name": "Partner",
       "members": [
         {
           "name": "Google",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "name": "silver",
+      "name": "Info",
       "members": [
         {
           "name": "Tapcore",
