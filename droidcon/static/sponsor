@@ -12,6 +12,11 @@
           "name": "65apps",
           "img": "https://AndX2.github.io/droidcon/static/img/logo_65apps.png",
           "link": "http://65apps.com/"
+        },
+        {
+          "name": "Tapcore",
+          "img": "https://AndX2.github.io/droidcon/static/img/tapcore.png",
+          "link": "https://tapcore.com"
         }
       ]
     },
@@ -19,9 +24,14 @@
       "name": "Info",
       "members": [
         {
-          "name": "Tapcore",
-          "img": "https://AndX2.github.io/droidcon/static/img/tapcore.png",
-          "link": "https://tapcore.com"
+          "name": "Droider",
+          "img": "https://AndX2.github.io/droidcon/static/img/droider.png",
+          "link": "http://droider.ru/"
+        },
+        {
+          "name": "GeekSputnik",
+          "img": "https://AndX2.github.io/droidcon/static/img/geek.png",
+          "link": "http://www.geeksputnik.tv/"
         },
         {
           "name": "SpiceIT",
