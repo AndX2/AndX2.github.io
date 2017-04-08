@@ -1,7 +1,7 @@
 {
   "category": [
     {
-      "name": "Partner",
+      "name": "Partner:",
       "members": [
         {
           "name": "Google",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "name": "Info",
+      "name": "Info:",
       "members": [
         {
           "name": "Droider",
@@ -36,7 +36,53 @@
         {
           "name": "SpiceIT",
           "img": "https://AndX2.github.io/droidcon/static/img/spice_logo.png",
+          "link": "http://www.gotech.vc/"
+        },
+        {
+          "name": "DigitalHR",
+          "img": "https://AndX2.github.io/droidcon/static/img/digitalhr.png",
+          "link": "http://digitalhr.ru/"
+        },
+        {
+          "name": " ",
+          "img": "https://AndX2.github.io/droidcon/static/img/rubrain.png",
+          "link": "http://www.rubrain.com/"
+        },
+        
+        {
+          "name": " ",
+          "img": "https://AndX2.github.io/droidcon/static/img/gotech.gif",
           "link": "http://www.spice-agency.ru/"
+        },
+        {
+          "name": " ",
+          "img": "https://AndX2.github.io/droidcon/static/img/gdg_nn.png",
+          "link": "http://devfest.gdgnn.ru/"
+        },
+        {
+          "name": "GetMobian",
+          "img": "https://AndX2.github.io/droidcon/static/img/getmobian.png",
+          "link": "http://getmobian.com/"
+        },
+        {
+          "name": "IT событие",
+          "img": "https://AndX2.github.io/droidcon/static/img/it_sobytie.png",
+          "link": "http://it-sobytie.ru/"
+        },
+        {
+          "name": " ",
+          "img": "https://AndX2.github.io/droidcon/static/img/it_planeta.png",
+          "link": "http://world-it-planet.org/"
+        },
+        {
+          "name": " ",
+          "img": "https://AndX2.github.io/droidcon/static/img/superjob.gif",
+          "link": "https://www.superjob.ru/"
+        },
+        {
+          "name": "droidnews",
+          "img": "https://AndX2.github.io/droidcon/static/img/droidnews.png",
+          "link": "http://droidnews.ru/"
         }
       ]
     }
