@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ru.rigla.client.android",
+      "sha256_cert_fingerprints": [
+        "E0:6B:2F:F4:FC:CC:50:B4:92:3E:D8:A3:30:6E:9D:29:B4:59:65:2F:B3:66:10:E5:6F:D2:CA:12:03:86:EB:0A"
+      ]
+    }
+  }
+]
