@@ -1,0 +1,29 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "Y78X7P2X2Y.ru.rigla.app.dev",
+        "paths": [
+          "/sales/*",
+          "/about/*",
+          "/customer/account/orders/*",
+          "/c/*",
+          "/search/*",
+          "/product/*"
+        ]
+      },
+      {
+        "appID": "Y78X7P2X2Y.ru.rigla.app.release",
+        "paths": [
+          "/sales/*",
+          "/about/*",
+          "/customer/account/orders/*",
+          "/c/*",
+          "/search/*",
+          "/product/*"
+        ]
+      }
+    ]
+  }
+}
